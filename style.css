@@ -1,15 +1,19 @@
-.container{
-
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
+.container {
+    display: flex;
+    flex-direction: column; /* 1. flex-direction */
+    justify-content: center; /* 3. justify-content */
+    height: 100vh;
 }
 
-.container, div{
-
-     width: 50px;
-     height: 50px;
-     border: 1px solid red;
-     gap: 10px;
+.box {
+    border: 1px solid black;
+    padding: 10px;
 }
 
+.box:nth-child(2) {
+    flex-grow: 2; /* 2. flex-grow */
+}
+
+.box:nth-child(4) {
+    align-self: flex-end; /* 4. align-self */
+}
